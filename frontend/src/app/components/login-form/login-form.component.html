@@ -1,0 +1,24 @@
+<!-- <p>login-form works!</p> -->
+<div class="container">
+    <div>
+        <img src="../../../assets/img/logo.png" alt="Logo Instituvional ISFT 220" width="150" height="150" srcset="">
+    </div>
+    <div class="formulario">
+        <form action="" class="formulario-login">
+            <h1>Iniciar Sesion</h1>
+            <mat-form-field appearance="outline">
+                <mat-label>Ingresa Tu Email</mat-label>
+                <input matInput placeholder="pepito@isft.edu.ar">
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Ingresa Tu Contraseña</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+            <button mat-flat-button color="primary" class="boton-login">ACCEDER</button>
+        </form>
+    </div>
+</div>
