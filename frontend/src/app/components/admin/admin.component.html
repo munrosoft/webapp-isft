@@ -1,0 +1,33 @@
+<!-- <p>admin works!</p> -->
+<body>
+    <!-- Toolbar -->
+    <mat-toolbar>
+        <span>Administracion ISFT 220</span>
+        <span class="example-spacer"></span>
+        <!-- ABAJO DE ESTA LINEA VAN LOS BOTONES PARA CERRAR SESION -->
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <!-- ENCIMA DE ESTA LINEA VAN LOS BOTONES PARA CERRAR SESION -->
+    </mat-toolbar>
+    <!-- Fin Toolbar -->
+
+    <!-- Botones Principales -->
+    <section class="container">
+        <mat-dialog-actions>
+            <button mat-stroked-button color="primary" (click)="openDialog()" class="btn-p">Administrador General</button>
+        </mat-dialog-actions>
+        <mat-dialog-actions>
+            <button mat-stroked-button color="primary" (click)="openDialog()" class="btn-p">Habilitar Fechas de Finales</button>
+        </mat-dialog-actions>
+        <mat-dialog-actions>
+            <button mat-stroked-button color="primary" (click)="openDialog()" class="btn-p">Listado de Alumnos</button>
+        </mat-dialog-actions>
+    </section>
+    <!-- DEBAJO DE ESTA LINEA VA UNA PAGINA BLANCA CON DATOS NUESTROS QUE LINKEAN A NUESTRAS REDES-->
+    <section>
+        <p class="parrafo-admin">WebApp Diseñada y Desarrollada por <a href="#" class="linkedin"> alumnos de 3° Año de Desarrollo de Software 2023</a></p>
+    </section>
+    <!-- ENCIMA DE ESTA LINEA VA UNA PAGINA BLANCA CON DDATOS NUESTROS QUE LINKEAN A NUESTRAS REDES -->
+    <!-- Fin Botones Principales -->
+</body>

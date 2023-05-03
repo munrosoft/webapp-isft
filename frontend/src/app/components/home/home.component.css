@@ -1,0 +1,76 @@
+/* ToolBar */
+.example-spacer {
+    flex: 1 1 auto;
+}
+.parrafo-home{
+    text-align: center;
+}
+/* Body > Botones */
+.container{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.btn-p{
+    padding: 85px;
+    font-size: 15px;
+    text-transform: uppercase
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.linkedin{
+    color: black;
+    text-decoration:underline;
+}
+.linkedin:hover{
+    color: purple;
+}
+/* mediaqueries botones */
+
+/* Estilos para pantallas de ancho mínimo de 1024px */
+@media screen and (min-width: 1024px) {
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .btn-p{
+        padding: 75px;
+        margin: auto;
+    }
+}
+
+/* Estilos para tablets con ancho entre 768px y 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 20px;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .btn-p{
+        padding: 50px 50px 50px 50px;
+    }
+  }
+  
+  /* Estilos para smartphones con ancho máximo de 767px */
+  @media screen and (max-width: 767px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .btn-p{
+        padding: 30px 10px 30px 10px;
+    }
+  }
