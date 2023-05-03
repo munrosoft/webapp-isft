@@ -33,3 +33,23 @@ a{
 .linkedin:hover{
     color: purple;
 }
+
+/* mediaqueries botones */
+
+  /* Estilos para smartphones con ancho máximo de 767px */
+@media screen and (max-width: 767px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .btn-p{
+        padding: 30px 50px 30px 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+}
